@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotografía</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #7B2CBF;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .album {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .photo-card {
+            text-align: center;
+        }
+
+        .album img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .album img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: white;
+            background-color: #25D366;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #7B2CBF;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Álbum de Fotografías</h1>
+    </header>
+
+    <section class="album">
+        <div class="photo-card">
+            <img src="img/1-25.jpg" alt="Foto 1" width="300">
+            <a class="whatsapp-button" href="https://wa.me/?text=Mira%20esta%20imagen:%20https://tuservidor.com/img/1-25.jpg" target="_blank">Enviar por WhatsApp</a>
+        </div>
+        <div class="photo-card">
+            <img src="img/1-33.jpg" alt="Foto 2" width="300">
+            <a class="whatsapp-button" href="https://wa.me/?text=Mira%20esta%20imagen:%20https://tuservidor.com/img/1-33.jpg" target="_blank">Enviar por WhatsApp</a>
+        </div>
+        <div class="photo-card">
+            <img src="img/1-44.jpg" alt="Foto 3" width="300">
+            <a class="whatsapp-button" href="https://wa.me/?text=Mira%20esta%20imagen:%20https://tuservidor.com/img/1-44.jpg" target="_blank">Enviar por WhatsApp</a>
+        </div>
+        <div class="photo-card">
+            <img src="img/1-48.jpg" alt="Foto 4" width="300">
+            <a class="whatsapp-button" href="https://wa.me/?text=Mira%20esta%20imagen:%20https://tuservidor.com/img/1-48.jpg" target="_blank">Enviar por WhatsApp</a>
+        </div>
+        <div class="photo-card">
+            <img src="img/1-58.jpg" alt="Foto 5" width="300">
+            <a class="whatsapp-button" href="https://wa.me/?text=Mira%20esta%20imagen:%20https://tuservidor.com/img/1-58.jpg" target="_blank">Enviar por WhatsApp</a>
+        </div>
+        <div class="photo-card">
+            <img src="img/1-70.jpg" alt="Foto 6" width="300">
+            <a class="whatsapp-button" href="https://wa.me/?text=Mira%20esta%20imagen:%20https://tuservidor.com/img/1-70.jpg" target="_blank">Enviar por WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Mi Álbum de Fotografías SELAH</p>
+    </footer>
+</body>
+</html>
